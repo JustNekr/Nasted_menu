@@ -1,0 +1,6 @@
+{% load tree_menu %}
+{% spaceless %}
+    {% for item in menu %}
+        <p><a href="{% url 'show' item.id %}">{{ item }}</a></p>
+    {% endfor %}
+{% endspaceless %}
